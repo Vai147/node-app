@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "a node app ",
   "homepage": "https://github.com/Vai147/node-app#readme",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/Vai147/node-app/issues"
   },
@@ -15,12 +15,14 @@
   "author": "Vaibhav",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node backend/src/index.js",
+    "dev": "nodemon backend/src/index.js"
   },
   "dependencies": {
     "dotenv": "^17.4.2",
     "env": "^0.0.2",
     "express": "^5.2.1",
-    "mongoose": "^9.6.3"
+    "mongoose": "^9.6.3",
+    "nodemon": "^3.1.14"
   }
 }
